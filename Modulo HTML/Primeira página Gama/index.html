@@ -92,5 +92,42 @@
         </tfoot>
     </table>
 
+    <!-- DIV -->
+    <section>
+        <div>
+
+        </div>
+    </section>
+
+    <!-- Formulários -->
+
+    <!-- Action= Destino para tratamento dos dados -->
+    <form action="#" method="POST">
+        <label for="campo1"> Nome </label>
+        <input type="text" name="nome" id="campo1">
+        <label for="campo2"> interesses de estudo </label>
+        <select name="interesses" id="campo2">
+            <option value="1"> Vendas </option>
+            <option value="2"> Marketing </option>
+        </select>
+
+        <fieldset>
+            <legend> interesses de estudo </legend>
+            <label for="campo3-1"> Vendas </label>
+            <input type="radio" name="interesses2" value="1" id="campo3-1">
+            <label for="campo3-2"> Marketing </label>
+            <input type="radio" name="interesses2" value="2" id="campo3-2">
+        </fieldset>
+        
+        <label> interesses de estudo </label>
+        <label> Vendas </label>
+        <input type="checkbox" name="interesses3" value="1">
+        <label> Marketing </label>
+        <input type="checkbox" name="interesses3" value="2">
+
+        <input type="submit" value="Enviar formulário">
+
+    </form>
+
 </body>
 </html>
