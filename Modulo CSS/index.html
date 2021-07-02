@@ -8,15 +8,33 @@
     <meta name="author" content="GustavoRSL">
     <meta name="description" content="Aprendendo CSS">
     <style>
-        div {
+        /* div {
             border: solid 2px red;
         }
+        */
 
+        .parent-container {
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            background-color: cadetblue;
+        }
+
+        .my-div{
+            background-color: gray;
+            padding: 2px 2px;
+            margin: 4px 4px;
+            border: 2px dashed red;
+
+        }
+        
     </style>
 </head>
 <body>
-    <div>
-        Olá, Mundo!
+    <div class="parent-container">
+        <div class="my-div">
+            Olá, Mundo!
+        </div>
     </div>
 </body>
 </html>
