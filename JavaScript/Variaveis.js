@@ -5,12 +5,12 @@ var myName = "GustavoRSL";
 console.log(myName);
 
 let language = "JavaScript";
-const pattern = "ECMAScript"
+const pattern = "ECMAScript";
 
 // Tipo de variaveis
-var string = "String"
-var inteiro = 1
-var float = 1.2
+var string = "String";
+var inteiro = 1;
+var float = 1.2;
 
 null
 undefined
@@ -28,8 +28,8 @@ var person = {
 var estudantes = ["Gustavo" , "R", "S", "L"]
 
 function soma() {
-    let a, b
-    return a + b
+    let a, b;
+    return a + b;
 }
 
 // Operador TYPEOF
