@@ -71,3 +71,52 @@ function falha(): never {
     return erro("Algo falhou");
 }
 
+// Union Types
+const nota: string | number = 5;
+ function exibirNota(nota: number | string) {
+     console.log(`Nota é ${nota}`);
+ }
+
+ exibirNota('10');
+ exibirNota(10);
+
+// Alias
+
+type Funcionario = {
+    nome: string;
+    sobrenome: string;
+    dataNascimento: Date;
+}
+
+type Funcionarios = string[];
+const funcionarios: Funcionarios = ["Gustavo","R","S","L"];
+
+function tratarFuncionarios(funcionarios: Funcionarios){
+    for(let funcionario of funcionarios){
+        console.log(funcionario);
+    }
+}
+
+// Nulos ou Opcionais
+let altura: number | null = 1.6;
+altura = null;
+
+type Contato = {
+    nome: string;
+    telefone1: string;
+    telefone2?: string; // ? = Opcional
+}
+
+const contato: Contato = {
+    nome: "GustavoRSL",
+    telefone1: "40028922"
+}
+
+// Assertion
+const minhaIdade: any = 23;
+(minhaIdade as number).toString();
+//(<number>minhaIdade).toString();
+
+const input = document.getElementById("numero1") as HTMLInputElement
+// const input = <HTMLInputElement>document.getElementById("numero1");
+console.log(input.value);
