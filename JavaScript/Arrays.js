@@ -28,6 +28,6 @@ console.log(Ordenados);
 const numeros2 = [1,24,25];
 const soma =numeros2.reduce((valorAnterior, valorAtual)=>{
     return valorAnterior + valorAtual;
-}5)
+});
 
 console.log(soma);
