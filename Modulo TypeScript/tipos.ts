@@ -54,3 +54,20 @@ criar({
 })
 
 //criar("GustavoRSL");  Dá erro
+
+// Never
+
+function loopInfinito(): never {
+    while(true){
+        // ...
+    }
+}
+
+function erro(mensagem: string): never {
+    throw new Error(mensagem);
+}
+
+function falha(): never {
+    return erro("Algo falhou");
+}
+
