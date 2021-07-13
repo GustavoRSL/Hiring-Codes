@@ -50,3 +50,23 @@ class Carro {
 }
 
 const carro = new Carro('Chevrolet', 'Prisma', 250);
+
+
+// Herança
+
+class Camaro extends Carro {
+    private turbo = false;
+
+    constructor() {
+        super('Chevrolet', 'Camaro', 500);
+    }
+
+    ligarTurbo(){
+        this.turbo = true;
+    }
+}
+
+const camaro = new Camaro();
+camaro.acelerar();
+camaro.frear();
+camaro.ligarTurbo();
